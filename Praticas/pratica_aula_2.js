@@ -20,6 +20,5 @@ http.createServer((req,res)=>{
         res.write("<h1>Terceira pagina</h1>")
         res.write("<p>Terceira rota</p>")
     }
-
     res.end()
 }).listen(porta, host, ()=>{console.log("Servidor em execução...")})

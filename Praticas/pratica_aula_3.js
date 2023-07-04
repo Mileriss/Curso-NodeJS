@@ -1,3 +1,4 @@
+// Lendo um arquivo HTML
 const http = require('http')
 const fs = require('fs')
 const porta = 3000

@@ -1,4 +1,5 @@
 // Servidor com entrada de texto simples
+
 const http = require('http')
 const porta = 3000
 const host = '127.0.0.1'

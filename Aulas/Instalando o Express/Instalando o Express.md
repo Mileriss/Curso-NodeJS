@@ -20,8 +20,9 @@ const host = '127.0.0.1'                |
                                         | http.createServer((req, res)=>{
 app.get('/', (req,res)=>{               |   res.writeHead(200,{'Content-Type':'text/plain'})
     res.send("Teste com express")       |   res.write("Teste sem express")
-})                                      |}).listen(porta, host, ()=>{console.log("Servidor em execução...")})
-
+})                                      |   res.end()
+                                        |}).listen(porta, host, ()=>{console.log("Servidor em execução...")})
+                                        
 app.listen(porta, host, ()=>{console.log("Servidor em execução...")})
 
 ```
